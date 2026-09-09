@@ -26,7 +26,9 @@ for(int i=0;str[i]!='\0';i++) len=i+1;
 //main function begins here
 int main()
 {
+//declaring string
 char str[21];
+//Accepting input
 printf("Input:");
 scanf("%[^\n]",str);
 // finding length of string
