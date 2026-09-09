@@ -1,3 +1,6 @@
+//Code by Tejas L P
+//Date:09-09-2026
+
 #include <stdio.h>
 int main()
 {
