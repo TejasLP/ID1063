@@ -2,20 +2,29 @@
 //Date:09-09-2026
 
 #include <stdio.h>
-int main()
-{
-char str[21];
-printf("Enter string:");
-scanf("%20s[^\n]",str);
-if(str[1]=='\0')
-{
-printf("Input string must atleast be 2 characters long");
-}
-else
+//writing a function to swap the first two characters in the string
+void swap(char str[])
 {
 char temp=str[0];
 str[0]=str[1];
 str[1]=temp;
+}
+int main()
+{
+//declaring string before acepting from user
+char str[21];
+printf("Enter string:");
+//accepting string
+scanf("%20s[^\n]",str);
+//checking if string is atleast 2 characters 
+if(str[1]=='\0')
+{
+printf("Input string must atleast be 2 characters long");
+}
+//swapping the characters
+else
+{
+swap(str);
 printf("%s",str);
 }
 }
