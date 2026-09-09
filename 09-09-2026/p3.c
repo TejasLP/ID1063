@@ -16,7 +16,7 @@ int main()
 char str[21];
 printf("Enter string:");
 //accepting string
-scanf("%20[^\n]",str);
+scanf("%[^\n]",str);
 //checking if string is atleast 2 characters long
 if(str[1]=='\0')
 {
