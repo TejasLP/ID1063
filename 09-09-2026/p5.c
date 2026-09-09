@@ -1,9 +1,8 @@
 //Code by Tejas L P
 //Date: 09-09-2026
 #include <stdio.h>
-int len;
 //checks whether the string is palindrome or not and accordingly returns 1 or 0
-int checkPalindrome(char *str)
+int checkPalindrome(char *str,int len)
 {
 for(int i=0;i<=len-i-1;i++)
 {
@@ -19,23 +18,25 @@ return 0;
 return 1;
 }
 //finding exact position where the string has characters and is not blank through findLen function
-void findLen(char *str)
+int findLen(char *str)
 {
+int len=0;
 for(int i=0;str[i]!='\0';i++) len=i+1;
+return len;
 }
 //main function begins here
 int main()
 {
 //declaring string
-char str[21];
+char str[50];
 //Accepting input
 printf("Input:");
 scanf("%[^\n]",str);
 // finding length of string
-findLen(str);
+int len=findLen(str);
 printf("Output: ");
 // Output
-if(checkPalindrome(str))
+if(checkPalindrome(str,len))
 {
 printf("Palindrome");
 }
